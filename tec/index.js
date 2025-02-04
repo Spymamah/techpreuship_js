@@ -56,3 +56,53 @@ switch(menu){
     console.log('sorry, that dish is not on our menu')
 
 }
+
+// a++
+
+// ++a
+
+let color = ['black', 'white', 'red', 'green', 'blue']
+
+for(let x = 0; x < color.length; x++){
+    console.log(color[x])
+}
+
+let counter = 0;
+while(counter < 100){
+    console.log("hello world")
+    counter++
+}
+// for some apps when you first log in will let u use the app after some time they will use while loop to log you out
+// do{
+//     console.log('hello world')
+// }while(false)
+
+
+    let paymentValue = false
+
+    do{
+        console.log('hello world')
+
+        if(!paymentValue){
+            let res = 'yes'
+            if(res === 'yes'){
+                paymentValue = true
+                break;
+        }}
+    }while(paymentValue)
+
+        let userNum = [[1,2,3,4],[6,7,8,9],[10,11,12,13]]
+        for (let x =0; x < userNum.length; x++){
+            for (let y = 0; y < userNum[x].length; y++){
+                console.log(userNum[x][y])
+        }}
+
+        function sum(value){
+            let sum = 0;
+            for (let x = 0; x < value.length; x++){
+                sum += value[x];
+                return sum;
+                }
+        }
+        sum(4)
+    

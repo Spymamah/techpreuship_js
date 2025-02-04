@@ -18,4 +18,20 @@ let both = fname.concat(" ", lname)
 console.log(both)
 
 fullname = `${fname} ${lname}`
-console.log(fullname)
+
+function sum(value){
+    let sum = 0;
+
+    for (let x = 0; x < value; x++){
+
+        sum += value;
+
+        
+        
+        }
+        
+        console.log(sum)
+        return sum;
+}
+ 
+console.log(sum(6))
