@@ -97,12 +97,15 @@ while(counter < 100){
                 console.log(userNum[x][y])
         }}
 
-        function sum(value){
+        function add(value){
             let sum = 0;
-            for (let x = 0; x < value.length; x++){
-                sum += value[x];
-                return sum;
+            for (let x = 0; x < value; x++){
+                sum += value;
                 }
-        }
-        sum(4)
+               
+                return sum;
+            }
+                
+        console.log(add(10)) 
+            
     
