@@ -35,7 +35,7 @@ let computer_science = {
     age:30
 }
 
-x = computer_science.level
+let x = computer_science.level
 console.log(x)
 myArray = Object.values(computer_science)
 console.log(myArray)
