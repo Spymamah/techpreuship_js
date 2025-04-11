@@ -1,42 +1,36 @@
-class kingdom {
+export class Kingdom {
     phylum;
-    class;
+    classification;
     other;
     family;
     genus;
     
-    constructor(Phylum, Class, Other, Family, Genus)
+    constructor(Phylum, Classification, Other, Family, Genus){
         this.phylum = Phylum;
-        this.class = Class;
+        this.classification = Classification;
         this.other = Other
         this.family = Family;
-        this.genus = Genus
-
+        this.genus = Genus;
+    
+}
 reproduction(){
-    console.log(`Animal can reproduce ${}`)
+    console.log(`Animal can reproduce ${this.phylum}`)
 }
 
 locomotion(){
-    console.log(`Animal can move`)
+    console.log(`Animal can move ${this.classification}`)
 
 }
 repiration(){
-    console.log(`Animal can breath`)
+    console.log(`Animal can breath ${this.other}`)
 
 }
 Nutrition(){
-    console.log(`Animal can feed it self`)
+    console.log(`Animal can feed it self ${this.family}`)
 
 }
-
-class species extends kingdom{
-    name;
-   
-
-    constructor(Name)
-    super(Name,phylum, Class, Other,Family, Genus )
-    this.name = Name;
-
+inteligence(){
+    console.log(`animals are smart ${this.genus}`)
 }
-
 }
+ 
