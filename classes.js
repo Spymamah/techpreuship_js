@@ -39,7 +39,7 @@ class car {
     constructor(Name, Year, Model, EngineNumber){
         this.name = Name;
         this.year = Year;
-        this.engine = Model;
+        this.model = Model;
         this.#engine = EngineNumber;
 
     }
@@ -59,5 +59,5 @@ class car {
 const myNewCar = new car("ghost", 2025, 'camery', "q4232533")
 console.log('my car details are:', myNewCar)
 
-myCar.accelarate()
-myCar.showEngineNo()
+myNewCar.accelarate()
+myNewCar.showEngineNo()
