@@ -1,18 +1,23 @@
-abstract class human{
-    string name;
-
-    public void running(){
-        System.out.println(name + " is running");
+class Human {
+    constructor(name) {
+        this.name = name;
     }
 
-    abstract void Sleep()
-}
-
-class martins extends human{
-    @OverconstrainedError
-
-    void Sleep(){
-
+    running() {
+        console.log(this.name + " is running");
     }
 
+    sleep() {
+        throw new Error("sleep() must be implemented by subclass");
+    }
 }
+
+class Martins extends Human {
+    sleep() {
+        console.log(this.name + " is sleeping");
+    }
+}
+
+const martins = new Martins("Martins");
+martins.running();
+martins.sleep();
