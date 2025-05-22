@@ -17,5 +17,8 @@ user.age = 34
 console.log(User2.age)
 console.log(user3.age)
 console.log(Object.keys(user))
+
+let properties = Object.keys(user)
+console.log("age includes", properties.includes('age'))
 console.log(Object.values(user))
 console.log(Object.entries(user))

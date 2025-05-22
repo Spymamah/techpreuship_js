@@ -1,4 +1,4 @@
-{
+let me ={
   "name": "techprenuership",
   "version": "1.0.0",
   "main": "abstract.js",
@@ -11,6 +11,8 @@
   "description": "",
   "type": "module"
 }
-
-  
+  let stringy = JSON.stringify(me)
+  console.log(stringy)
+  let you = JSON.parse(stringy)
+  console.log(you)
 
